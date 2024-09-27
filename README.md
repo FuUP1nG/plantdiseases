@@ -1,16 +1,2 @@
 # Plant_Diseases
 
-$(document).ready(function() {
-    var diseases = [
-        { id: 1, name: "Tomato Blight", symptoms: "Brown spots on leaves" },
-        { id: 2, name: "白粉病 Powdery Mildew", symptoms: "White powder on leaves" },
-        { id: 3, name: "Leaf Spot", symptoms: "Dark lesions on leaves" }
-    ];
-
-    var listHtml = '<ul class="list-group">';
-    diseases.forEach(function(disease) {
-        listHtml += `<li class="list-group-item"><strong>${disease.name}</strong>: ${disease.symptoms}</li>`;
-    });
-    listHtml += '</ul>';
-    $('#disease-list').html(listHtml);
-});
